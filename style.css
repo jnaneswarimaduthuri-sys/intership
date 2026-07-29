@@ -1,0 +1,129 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background:#0077b6;
+    color:white;
+    padding:20px;
+}
+
+header h1{
+    text-align:center;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+/* Sections */
+section{
+    padding:50px 20px;
+    text-align:center;
+}
+
+/* Hero */
+.hero{
+    background:#caf0f8;
+}
+
+.hero h2{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+/* Button */
+.btn{
+    background:#0077b6;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:#023e8a;
+}
+
+/* Skills */
+.skills ul{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+.skills li{
+    background:white;
+    padding:10px 20px;
+    border-radius:5px;
+    box-shadow:0 0 5px gray;
+}
+
+/* Contact Form */
+form{
+    width:50%;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    background:#0077b6;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#023e8a;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
