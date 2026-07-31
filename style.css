@@ -86,7 +86,7 @@ section{
 }
 
 /* =========================
-   Button
+   Buttons
 ========================= */
 .btn,
 button{
@@ -98,7 +98,7 @@ button{
     border:none;
     border-radius:5px;
     cursor:pointer;
-    transition:0.3s;
+    transition:.3s;
     font-size:16px;
 }
 
@@ -169,7 +169,7 @@ button:hover{
 }
 
 /* =========================
-   Tables
+   Education Table
 ========================= */
 table{
     width:90%;
@@ -183,6 +183,7 @@ table th,
 table td{
     border:1px solid #ccc;
     padding:15px;
+    text-align:center;
 }
 
 table th{
@@ -241,16 +242,31 @@ footer p{
    Responsive Design
 ========================= */
 
-/* Tablets */
-@media(max-width:768px){
+/* Large Desktop */
+@media (min-width:1025px){
+
+    .hero h2{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:20px;
+    }
+
+    .contact form{
+        width:50%;
+    }
+}
+
+/* Tablet */
+@media (max-width:1024px){
 
     header h1{
-        font-size:28px;
+        font-size:30px;
     }
 
     nav ul{
-        flex-direction:column;
-        gap:12px;
+        gap:15px;
     }
 
     .hero{
@@ -258,11 +274,52 @@ footer p{
     }
 
     .hero h2{
-        font-size:30px;
+        font-size:32px;
     }
 
     .hero p{
-        font-size:16px;
+        font-size:17px;
+    }
+
+    .contact form{
+        width:80%;
+    }
+
+    table{
+        width:95%;
+    }
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    header{
+        padding:15px;
+    }
+
+    header h1{
+        font-size:26px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    section{
+        padding:40px 15px;
+    }
+
+    .hero{
+        padding:50px 15px;
+    }
+
+    .hero h2{
+        font-size:26px;
+    }
+
+    .hero p{
+        font-size:15px;
     }
 
     .skills ul{
@@ -270,46 +327,42 @@ footer p{
     }
 
     .contact form{
-        width:90%;
+        width:100%;
     }
 
     table{
+        display:block;
+        overflow-x:auto;
+        white-space:nowrap;
         width:100%;
         font-size:14px;
     }
 
+    input,
+    textarea,
     button,
     .btn{
         width:100%;
     }
-
 }
 
-/* Mobile */
-@media(max-width:480px){
-
-    header{
-        padding:15px;
-    }
+/* Small Mobile */
+@media (max-width:480px){
 
     header h1{
-        font-size:24px;
-    }
-
-    section{
-        padding:40px 15px;
+        font-size:22px;
     }
 
     .hero h2{
-        font-size:24px;
+        font-size:22px;
     }
 
     .hero p{
-        font-size:15px;
+        font-size:14px;
     }
 
-    nav ul{
-        gap:10px;
+    nav ul li a{
+        font-size:15px;
     }
 
     input,
@@ -317,4 +370,7 @@ footer p{
         font-size:14px;
     }
 
+    footer{
+        font-size:14px;
+    }
 }
