@@ -184,6 +184,40 @@ footer a:hover{
 #topBtn:hover{
     background:#084298;
 }
+ /* Projects */  
+ .project-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:20px;
+ }
+
+ .project-card{
+    background:#f8f9fa;
+    width:300px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:0.3s;
+    text-align:left;
+    border-top:5px solid #0d6efd;
+ }
+
+ .project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+ }
+
+ .project-card h3{
+    color:#0d6efd;
+    margin-bottom:10px;
+ }
+
+ .project-card p{
+    color:#555;
+    font-size:15px;
+ }
 
 /* Responsive */
 @media(max-width:768px){
