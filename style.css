@@ -241,3 +241,65 @@ footer a:hover{
         margin:10px 0;
     }
 }
+/* =========================
+   Skills Section
+========================= */
+
+#skills ul{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#skills li{
+    display: inline-block;
+    background: #0d6efd;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 20px;
+}
+
+/* =========================
+   Resume Section
+========================= */
+
+#resume{
+    text-align: center;
+}
+
+#resume .btn{
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0d6efd;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#resume .btn:hover{
+    background: #084298;
+}
+
+/* =========================
+   Experience Section
+========================= */
+
+#experience{
+    text-align: center;
+}
+
+.experience-card{
+    max-width: 700px;
+    margin: 20px auto;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    text-align: left;
+}
+
+.experience-card ul{
+    padding-left: 20px;
+}
