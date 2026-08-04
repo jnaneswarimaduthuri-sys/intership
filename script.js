@@ -18,25 +18,34 @@ function downloadResume() {
 document.getElementById("welcomeTitle").addEventListener("click", function () {
     this.innerHTML = "Welcome to My Portfolio!";
 });
+// Contact Form Validation
 
-// Contact Form Submit
-const form = document.querySelector("form");
+const form = document.getElementById("contactForm");
+const formMessage = document.getElementById("formMessage");
 
-form.addEventListener("submit", function (event) {
+form.addEventListener("submit", function(event){
+
     event.preventDefault();
 
-    const name = form.querySelector('input[type="text"]').value;
-    const email = form.querySelector('input[type="email"]').value;
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-    if (name === "" || email === "") {
-        alert("Please fill in all required fields.");
+    if(name === "" || email === "" || message === ""){
+
+        formMessage.style.color = "red";
+        formMessage.innerHTML = "Please fill in all fields.";
+
         return;
     }
 
-    alert("Thank you, " + name + "! Your message has been submitted.");
+    formMessage.style.color = "green";
+    formMessage.innerHTML = "Message sent successfully!";
 
     form.reset();
+
 });
+
 
 // Scroll to Top Button
 const topBtn = document.getElementById("topBtn");
